@@ -10,7 +10,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['158.160.74.8', '127.0.0.1', 'localhost', 'catsforfun.hopto.org']
+ALLOWED_HOSTS = [
+    '158.160.74.8', '127.0.0.1', 'localhost', 'catsforfun.hopto.org'
+    ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -103,14 +105,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated', 
+        'rest_framework.permissions.IsAuthenticated',
     ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
 
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
 
 }

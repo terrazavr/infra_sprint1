@@ -1,5 +1,4 @@
 IP: 158.160.74.8;
 name_taski: https://taskidi.gotdns.ch;
 name_kittygram: https://catsforfun.hopto.org;
-login: Dilyara;
-password: 365471702D;
+
